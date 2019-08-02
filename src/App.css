@@ -346,7 +346,9 @@ span {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-    
+    body {
+      overflow-x: hidden;
+    }
     .logo {
       width:145px;
       height:145px;
@@ -420,21 +422,55 @@ span {
 
 
   /* Media Query Phone*/
-  @media only screen
-  and (max-width: 480px){
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+
 
   /*About Us*/
     body {
       overflow-x: hidden;
     }
-    .AboutUs{
+    .logo {
+      width:105px;
+      height:105px;
+    }
+    .link-items {
+      font-size: 22px;
+    }
+    .carousel-caption {
+      font-size: 28px;
+      bottom:40px;
+      left: 0;
+    }
+    .carousel-indicators li {
+      width: 7px;
+      height: 7px;
+    }
+    .pic-gallery  {
+      grid-template-columns: 1fr;
+      grid-gap: 40px 38px;
+      padding:20px;
+    }
+    .pic-gallery img {
+      height: 300px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .form-address {
+      display: unset;
+    }
+    /* .AboutUs{
       display: unset;
       flex-direction: row;
       justify-content: center;
       
       margin-top: 7em;
       margin-bottom: 7em;
-    }
+    } */
   }
   /* .AboutImg img{
     width: 100%;
