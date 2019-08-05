@@ -24,7 +24,7 @@ export default class NavBar extends React.Component {
           <Nav className="mr-auto">
             <div className='link-items'>
 
-              <p className="link" onClick={this.scrollToTop}>Home</p>
+              <p className="link home"  onClick={this.scrollToTop}>Home</p>
 
               <p className="link">
                 <Link
